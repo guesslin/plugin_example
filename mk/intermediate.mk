@@ -1,0 +1,8 @@
+MKTARGETS = all clean
+
+.PHONY: $(MKTARGETS) $(SUBDIRS)
+
+$(MKTARGETS): $(SUBDIRS)
+
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
