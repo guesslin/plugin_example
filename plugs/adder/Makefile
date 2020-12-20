@@ -1,5 +1,6 @@
 TARGETS = average mod simple
 
+.PHONY: all
 all: $(TARGETS)
 
 .PHONY: $(TARGETS)
